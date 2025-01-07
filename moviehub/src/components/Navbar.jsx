@@ -1,9 +1,12 @@
 import React from 'react'
 import logo from '../assets/images/logo.png'
+import { Link } from 'react-router-dom'
+import SearchBox from './SearchBox'
 
 function Navbar() {
-  return (
-    <div className='w-screen max-w-7xl'>
+  return ( 
+    <div>
+    <div className='fixed bg-white w-full z-10 shadow-md p-5 px-20'>
         <div className='flex justify-between'>
             <div className='flex gap-2 items-center'>
                 <img src={logo} alt="" className='h-20 w-20'/>
@@ -13,12 +16,16 @@ function Navbar() {
                 </div>
             </div>
             <ul className='flex gap-5 items-center'>
-                <a href=""><li>Home</li></a>
-                <a href=""><li>All movie</li></a>
-                <a href=""><li>About</li></a>
-                <a href=""><li>Contact</li></a>
+                <li><Link to='/'>Home</Link></li>
+                <li><Link to='/allmovie'>All movie</Link></li>
+                <li><Link to='/about'>About</Link></li>
+                <li><Link to='/contact'>Contact</Link></li>
             </ul>
+            <div className='flex items-center'>
+                <SearchBox />
+            </div>
         </div>
+    </div>
     </div>
   )
 }

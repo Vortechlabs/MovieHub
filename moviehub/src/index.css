@@ -19,7 +19,6 @@
 
 a {
   font-weight: 500;
-  color: #d6242c;
   text-decoration: inherit;
 }
 a:hover {
@@ -29,7 +28,6 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
 }
