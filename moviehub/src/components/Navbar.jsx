@@ -6,7 +6,7 @@ import SearchBox from './SearchBox'
 function Navbar() {
   return ( 
     <div>
-    <div className='fixed bg-white w-full z-10 shadow-md p-5 px-20'>
+    <div className='fixed bg-white dark:bg-[#242424] w-full z-10 shadow-md p-5 px-20'>
         <div className='flex justify-between'>
             <div className='flex gap-2 items-center'>
                 <img src={logo} alt="" className='h-20 w-20'/>
