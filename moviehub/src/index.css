@@ -24,6 +24,12 @@ a {
 a:hover {
   color: #8f1218;
 }
+a:active {
+  color: #8f1218;
+}
+a:focus {
+  color: #8f1218;
+}
 
 body {
   margin: 0;

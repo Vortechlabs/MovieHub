@@ -33,6 +33,7 @@ const All_movie = () => {
       const response = await fetch('https://api.themoviedb.org/3/discover/movie?api_key=3c581ea7a292c1bd5b4acc5d7afa8699');
       const json = await response.json();
       setDiscoverShows(json.results);
+      console.log(json.results);
     } catch (err) {
       console.log(err);
     }
@@ -74,7 +75,6 @@ const All_movie = () => {
   return (
     <div className='flex justify-center w-screen'>
       <div className="w-[100%]">
-
         
         {/* Discover Section */}
         <div className='pt-20'>

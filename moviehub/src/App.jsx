@@ -9,9 +9,8 @@ function App() {
   return (
     <Router>
       <Navbar/>
-      <div className='mt-32'></div>
+      <div className='mt-28'></div>
       <Routes>
-        
         <Route path="/" element={<Home />} />
         <Route path="/allmovie" element={<All_movie />} />
         <Route path="/about" element={<About />} />
